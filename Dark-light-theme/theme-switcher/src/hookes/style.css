@@ -1,0 +1,26 @@
+
+:root{
+    --background: #ffffff;
+    --text-Primary: #000000;
+    --button-bg: #000000;
+    --button-text-clr: #ffffff;
+}
+
+[data-theme = 'dark'] {
+    --background: #000000;
+    --text-Primary: #ffffff;
+    --button-bg: #ffffff;
+    --button-text-clr: #000000;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background);
+    color: var(--text-Primary);
+}
+
+.container btn {
+    background-color: var(--button-bg);
+    color: var(--button-text-clr);
+}
