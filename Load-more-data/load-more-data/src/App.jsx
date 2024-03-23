@@ -31,6 +31,26 @@ function App() {
     }
   }
 
+  // const fetchProduct = ()=> {
+  //     setLoading(true);
+      
+  //     fetch(`https://dummyjson.com/products?limit=20&skip=${count * 20}`)
+  //     .then((res)=> res.json())
+  //     .then((data)=>{
+  //       if (data && data.products && data.products.length) {
+  //         setProducts((prevData) => [...prevData, ...data.products]);
+  //         setLoading(false)
+  //       }
+  //     })
+  //     .catch(error => {
+  //       setError(error);
+  //       setLoading(false)
+  //     }).finally(()=>{
+  //       console.log('block is finally executed');
+  //     })
+  // }
+
+
   useEffect(() => {
     fetchProduct()
   }, [count])
@@ -67,7 +87,8 @@ function App() {
         <button
           onClick={() => setCount(count + 1)}
           className=' bg-slate-500 text-yellow-400 my-5 py-3 px-5 font-bold text-xl'
-        >Load More</button>
+        >Load More
+        </button>
       </div>
     </div>
   )
